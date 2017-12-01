@@ -32,11 +32,11 @@ class Application:
 				conteudo = self.box.get(1.0, END)
 				for i, linha in enumerate(conteudo.split('\n')) :
 					if i == 0 : 
-					    texto = 'cQuery := \" ' + linha.replace('\n', '').strip(" ") + ' \"\n'
+						texto = 'cQuery := \" ' + linha.replace('\n', '').strip(" ") + ' \"\n'
 					elif i == len(conteudo.split('\n')) - 1:
 						texto
 					else :
-					    texto += 'cQuery += \" ' + linha.replace('\n', '').strip(" ") + ' \"\n'
+						texto += 'cQuery += \" ' + linha.replace('\n', '').strip(" ") + ' \"\n'
 				self.box.delete(1.0, END)
 				self.box.insert(INSERT, texto)
 

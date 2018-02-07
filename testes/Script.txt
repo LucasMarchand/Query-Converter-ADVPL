@@ -1,0 +1,5 @@
+ref_arquivo = open("C:\Users\lucas.rocha\Documents\Projetos\Roteiro.txt","r")
+for linha in ref_arquivo:  
+    texto = 'cQuery := \"' + linha.replace('\n', '') + '\"' 
+    print (texto)
+ref_arquivo.close()
